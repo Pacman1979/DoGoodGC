@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DoGood Pet Nutrition – Website Proposals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, #f0f9ec 0%, #fff8e1 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: 'Nunito', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #b8ddb0;
+      margin-bottom: 4px;
+      letter-spacing: -1px;
+    }
+
+    .logo span { color: #f5b800; }
+
+    .tagline {
+      font-size: 13px;
+      color: #999;
+      font-style: italic;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      border: 2px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    .card.v1 { border-color: #b8ddb0; }
+    .card.v2 { border-color: #f5b800; }
+
+    .card-version {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 6px 16px;
+      border-radius: 50px;
+    }
+
+    .card.v1 .card-version { background: #b8ddb0; color: #2d6a2d; }
+    .card.v2 .card-version { background: #f5b800; color: #7a5c00; }
+
+    .card-icon { font-size: 48px; }
+
+    .card-title {
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #1a1a1a;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .card-includes {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-align: left;
+    }
+
+    .card-includes li {
+      font-size: 13px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .check { color: #5a9e4a; font-weight: 800; }
+
+    .card-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 800;
+      font-family: 'Nunito', sans-serif;
+      margin-top: 4px;
+      transition: opacity 0.2s;
+    }
+
+    .card-btn:hover { opacity: 0.85; }
+    .card.v1 .card-btn { background: #5a9e4a; color: white; }
+    .card.v2 .card-btn { background: #f5b800; color: #1a1a1a; }
+
+    .footer-note {
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .cards { grid-template-columns: 1fr; }
+      h1 { font-size: 24px; }
+      .logo { font-size: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">DOG<span>oo</span>d</div>
+    <div class="tagline">nutrition &amp; care for thriving dogs</div>
+
+    <h1>Website Redesign Proposals</h1>
+    <p class="subtitle">
+      Two versions of the new DoGood homepage for your review.<br>
+      Click each one to see the full page, then let us know which direction you prefer!
+    </p>
+
+    <div class="cards">
+
+      <a class="card v1" href="./v1/">
+        <div class="card-version">Version 1</div>
+        <div class="card-icon">🔧</div>
+        <div class="card-title">Your Requested Changes</div>
+        <p class="card-desc">The existing site with all of your specific updates applied.</p>
+        <ul class="card-includes">
+          <li><span class="check">✓</span> Bullet alignment fixed on mobile</li>
+          <li><span class="check">✓</span> Award certificate added to hero</li>
+          <li><span class="check">✓</span> "If this is you…" section added</li>
+          <li><span class="check">✓</span> Why Choose list alignment fixed</li>
+          <li><span class="check">✓</span> Pricing moved after trust sections</li>
+        </ul>
+        <span class="card-btn">View Version 1 →</span>
+      </a>
+
+      <a class="card v2" href="./v2/">
+        <div class="card-version">Version 2</div>
+        <div class="card-icon">🚀</div>
+        <div class="card-title">Full JD WOW Redesign</div>
+        <p class="card-desc">A complete redesign built on proven direct-response marketing principles.</p>
+        <ul class="card-includes">
+          <li><span class="check">✓</span> Problem/solution hero headline</li>
+          <li><span class="check">✓</span> Ellie front and centre with awards</li>
+          <li><span class="check">✓</span> Trust bar + credentials section</li>
+          <li><span class="check">✓</span> Free guide lead magnet</li>
+          <li><span class="check">✓</span> Full conversion-focused flow</li>
+        </ul>
+        <span class="card-btn">View Version 2 →</span>
+      </a>
+
+    </div>
+
+    <p class="footer-note">© 2025 DoGood Pet Nutrition · Gold Coast, QLD</p>
+
+  </div>
+</body>
+</html>
